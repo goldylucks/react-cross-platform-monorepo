@@ -1,0 +1,30 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "scripty"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripty": {
+    "path": "./scripts/workspace"
+  },
+  "volta": {
+    "node": "14.16.1",
+    "yarn": "1.22.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-plugin-jest": "^24.3.5",
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0",
+    "rimraf": "^3.0.2",
+    "scripty": "^2.0.0"
+  }
+}
